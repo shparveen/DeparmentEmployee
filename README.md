@@ -11,51 +11,42 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Here are the API endpoints that were created:
 
-## Learning Laravel
+BASE_URL = "http://localhost:85/projects/Employee/public"
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+REST API URL for department
 
-## Laravel Sponsors
+GET {BASE_URL}/api/departments — Return all departments
+GET {BASE_URL}/api/departments/{id} — Return the department with the specified id
+POST {BASE_URL}/api/departments — Add a new department
+PUT {BASE_URL}/api/departments/{id} — Update the employee with the specified id
+DELETE {BASE_URL}/api/deparments/{id} — Delete the employee with the specified id
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+REST API URL for employee
 
-### Premium Partners
+GET {BASE_URL}/api/employees — Return all employees
+GET {BASE_URL}/api/employees/{id} — Return the employee with the specified id
+POST {BASE_URL}/api/employees — Add a new employee
+PUT {BASE_URL}/api/employees/{id} — Update the employee with the specified id
+DELETE {BASE_URL}/api/employees/{id} — Delete the employee with the specified id
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+REST API URL for employee phone numbers
 
-## Contributing
+GET {BASE_URL}/api/contacts — Return all employees phone numbers
+GET {BASE_URL}/api/contacts/{id} — Return the phone number for an employee with the specified id
+POST {BASE_URL}/api/contacts — Add a new phone number for an employee
+PUT {BASE_URL}/api/contacts/{id} — Update the phone number with the specified id
+DELETE {BASE_URL}/api/contacts/{id} — Delete the phone number with the specified id
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+REST API URL for employee addresses
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+GET {BASE_URL}/api/addresses — Return all employees addresses
+GET {BASE_URL}/api/addresses/{id} — Return the adrress with the specified id
+POST {BASE_URL}/api/addresses — Add a new address
+PUT {BASE_URL}/api/addresses/{id} — Update the employee address with the specified id
+DELETE {BASE_URL}/api/addresses/{id} — Delete the employee address with the specified id
